@@ -1,0 +1,485 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Raila Amolo Odinga | A Life in Service</title>
+<link href="assets/img/favicon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<meta name="description" content="A respectful digital remembrance of Rt. Hon. Raila Amolo Odinga — his life, public service, family, African contribution and legacy.">
+<style>
+:root{
+  --bg:#070a09;--panel:#101513;--panel2:#151c19;--gold:#d6b56b;--gold2:#f1d898;
+  --green:#0c6b45;--green2:#19a66a;--red:#a92828;--cream:#f4efe3;--muted:#a9b2ad;
+  --line:rgba(214,181,107,.22);--shadow:0 25px 80px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at 50% 0,#173326 0,#080b0a 38%,#050706 100%);
+font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--cream);line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.045;background-image:radial-gradient(#fff .7px,transparent .7px);background-size:5px 5px;z-index:5}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(5,8,7,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{max-width:1200px;margin:auto;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 22px}
+.brand{font-family:Georgia,serif;font-weight:bold;letter-spacing:.08em;color:var(--gold)}
+.brand small{display:block;font:10px Arial;color:#aaa;letter-spacing:.18em}
+.links{display:flex;gap:22px;font-size:13px;color:#cdd2ce}.links a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 10px;border-radius:8px}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:110px 20px 60px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:650px;height:650px;border-radius:50%;background:rgba(25,166,106,.12);filter:blur(90px);top:8%;left:50%;transform:translateX(-50%)}
+.eyebrow{color:var(--gold);letter-spacing:.3em;text-transform:uppercase;font-size:12px;font-weight:700}
+.hero h1{font-family:Georgia,serif;font-size:clamp(48px,9vw,112px);line-height:.9;margin:22px 0;color:#f7f0df;position:relative;z-index:2}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:700px;margin:25px auto;color:#c2c9c5;font-size:18px;position:relative;z-index:2}
+.date{display:inline-flex;gap:12px;align-items:center;border:1px solid var(--line);padding:10px 17px;border-radius:999px;color:var(--gold2);background:rgba(255,255,255,.035);position:relative;z-index:2}
+.cta{display:inline-block;margin-top:28px;background:var(--gold);color:#15130e;padding:13px 22px;border-radius:5px;font-weight:800;position:relative;z-index:2}
+section{max-width:1200px;margin:auto;padding:100px 22px}
+.sectiontag{color:var(--gold);font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:800}
+h2{font:clamp(35px,5vw,60px) Georgia,serif;line-height:1.05;margin:12px 0 25px}
+.lead{max-width:760px;color:var(--muted);font-size:17px}
+.quote{margin:35px 0;padding:28px 30px;border-left:3px solid var(--gold);background:linear-gradient(90deg,rgba(214,181,107,.08),transparent);font:italic 25px Georgia,serif;color:#eee4cf}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:35px}
+.stat{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:14px}.stat b{display:block;font:36px Georgia;color:var(--gold)}.stat span{color:#aab2ae;font-size:13px}
+.timeline{position:relative;margin-top:45px}.timeline:before{content:"";position:absolute;left:90px;top:0;bottom:0;width:1px;background:var(--line)}
+.event{display:grid;grid-template-columns:90px 1fr;gap:35px;margin:0 0 38px;position:relative}
+.year{color:var(--gold);font-weight:800;padding-top:4px}.event article{background:var(--panel);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:24px;box-shadow:var(--shadow)}.event article h3{margin:0 0 8px;font:25px Georgia;color:#eee}.event article p{margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+.card{padding:28px;background:linear-gradient(145deg,#121916,#0c100f);border:1px solid rgba(255,255,255,.08);border-radius:18px;transition:.3s}.card:hover{transform:translateY(-5px);border-color:var(--line)}.icon{font-size:28px}.card h3{font:24px Georgia;margin:15px 0 7px}.card p{color:var(--muted);margin:0}
+.memorial{background:linear-gradient(135deg,#0b3425,#0b1511 60%,#250e0e);border:1px solid var(--line);border-radius:25px;padding:55px;text-align:center;box-shadow:var(--shadow)}
+.candle{font-size:45px;filter:drop-shadow(0 0 20px #e6c36a)}.memorial h2{margin-top:10px}.memorial p{color:#c7cdc8;max-width:680px;margin:15px auto}
+#countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px 0}.timebox{min-width:90px;padding:13px;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:10px}.timebox b{display:block;font-size:27px;color:var(--gold2)}.timebox small{color:#9ba49f}
+footer{border-top:1px solid var(--line);padding:50px 22px;text-align:center;color:#929a96;background:#050706}footer strong{color:var(--gold)}
+.fade{opacity:0;transform:translateY(22px);transition:.8s}.fade.show{opacity:1;transform:none}
+@media(max-width:800px){.links{display:none}.menu{display:block}.navin{height:62px}.hero{min-height:90vh}.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.timeline:before{left:65px}.event{grid-template-columns:65px 1fr;gap:18px}.memorial{padding:35px 20px}}
+@media(max-width:500px){.hero h1{font-size:54px}.stats{grid-template-columns:1fr}.event{display:block;padding-left:0}.timeline:before{display:none}.year{margin-bottom:7px}.event article{padding:20px}}
+
+.section-photo{margin:30px 0;border-radius:22px;overflow:hidden;height:390px;position:relative;border:1px solid var(--line);box-shadow:var(--shadow);background:#111}
+.section-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.04)}
+.section-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,8,7,.72),rgba(5,8,7,.10) 65%,rgba(5,8,7,.38))}
+.photo-caption{position:absolute;z-index:2;left:28px;bottom:24px;max-width:600px;color:#fff}
+.photo-caption b{display:block;color:var(--gold2);font:26px Georgia,serif;margin-bottom:5px}
+.photo-caption span{font-size:12px;color:#d1d7d3}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:38px}
+.gitem{height:310px;position:relative;overflow:hidden;border-radius:16px;background:#111;border:1px solid rgba(255,255,255,.08);cursor:pointer}
+.gitem img{width:100%;height:100%;object-fit:cover;transition:transform .55s,filter .55s;filter:saturate(.8)}
+.gitem:hover img{transform:scale(1.07);filter:saturate(1)}
+.gitem:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.gcaption{position:absolute;z-index:2;left:17px;right:17px;bottom:15px}.gcaption b{display:block;font:18px Georgia;color:#fff}.gcaption small{color:#c3cbc6}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:99;display:none;align-items:center;justify-content:center;padding:25px}
+.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:85vh;border-radius:12px;box-shadow:0 20px 100px #000}
+.closebox{position:absolute;top:22px;right:25px;font-size:34px;color:#fff;cursor:pointer}
+.source-note{margin-top:18px;color:#89938e;font-size:12px}
+@media(max-width:800px){.gallery{grid-template-columns:1fr 1fr}.section-photo{height:310px}}
+@media(max-width:500px){.gallery{grid-template-columns:1fr}.gitem{height:330px}}
+
+.chapter-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:45px}
+.chapter{background:#0d1210;border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden;box-shadow:0 18px 55px rgba(0,0,0,.28);transition:.35s}
+.chapter:hover{transform:translateY(-6px);border-color:var(--line)}
+.chapter-photo{height:285px;overflow:hidden;position:relative}
+.chapter-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(1.06);transition:.5s}
+.chapter:hover .chapter-photo img{transform:scale(1.045);filter:saturate(.98)}
+.chapter-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.7))}
+.chapter-year{position:absolute;z-index:2;top:18px;left:18px;background:rgba(4,8,6,.78);border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--gold2);font-weight:800;font-size:12px}
+.chapter-body{padding:25px}.chapter-body h3{font:28px Georgia,serif;margin:0 0 9px}.chapter-body p{color:var(--muted);margin:0 0 13px}.chapter-body .fact{font-size:12px;color:#d4c99f;border-left:2px solid var(--gold);padding-left:10px}
+.chapter-body .source{font-size:11px;color:#78837d;margin-top:12px}
+.chapter-wide{grid-column:1/-1}
+.memory-banner{margin-top:45px;padding:45px;border-radius:22px;background:linear-gradient(110deg,rgba(12,107,69,.32),rgba(169,40,40,.16));border:1px solid var(--line)}
+.memory-banner h3{font:34px Georgia;margin:0 0 10px}.memory-banner p{color:#c5cdc8;max-width:800px;margin:0}
+@media(max-width:800px){.chapter-grid{grid-template-columns:1fr}.chapter-wide{grid-column:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="navin">
+    <a href="#home" class="brand">RAILA ODINGA<small>A LIFE IN SERVICE</small></a>
+    <div class="links">
+      <a href="#story">Story</a><a href="#timeline">Timeline</a><a href="#service">Service</a><a href="#gallery">Gallery</a><a href="#memorial">Remember</a><a href="#sources">Sources</a>
+    </div>
+    <button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div>
+    <div class="eyebrow">Kenya remembers</div>
+    <h1>Raila <span>Amolo</span><br>Odinga</h1>
+    <div class="date">🕯️ 1945 — 2025 &nbsp; • &nbsp; In remembrance</div>
+    <p>A digital tribute to a Kenyan statesman — reflecting on his life, public service, family, democratic journey and contribution to Africa.</p>
+    <a class="cta" href="#story">Explore his journey ↓</a>
+  </div>
+</header>
+
+<section id="story" class="fade show">
+  <div class="sectiontag">The story</div>
+  <h2>A life woven into Kenya's history.</h2>
+  <p class="lead">Raila Amolo Odinga was a former Prime Minister of Kenya and a major figure in the country's political and democratic history. He also served the African Union as High Representative for Infrastructure Development in Africa.</p>
+  <div class="section-photo">
+    <img src="https://media.licdn.com/dms/image/v2/D4D22AQEmOCaYzUrniw/feedshare-shrink_1280/B4DZnnOJQYJMAs-/0/1760520869610?e=2147483647&amp;t=6gk65gSIZIDkd0ADRj93fAYunqyEECWRN805m4ng5LY&amp;v=beta" alt="Portrait of Raila Amolo Odinga">
+    <div class="photo-caption"><b>A statesman remembered</b><span>Portrait used as a visual introduction to the man behind the public record.</span></div>
+  </div>
+  <div class="quote">“A life of public service leaves behind more than a name — it leaves questions, memories, ideas and a story for the next generation to study.”</div>
+  <div class="stats">
+    <div class="stat"><b>80</b><span>Years of life</span></div>
+    <div class="stat"><b>2008–13</b><span>Prime Minister of Kenya</span></div>
+    <div class="stat"><b>AU</b><span>High Representative for Infrastructure Development</span></div>
+    <div class="stat"><b>2025</b><span>Posthumously awarded C.G.H., First Class</span></div>
+  </div>
+</section>
+
+<section id="timeline" class="fade show">
+  <div class="sectiontag">A journey through time</div>
+  <h2>Milestones</h2>
+  <p class="lead">Selected moments from a long public life. This timeline is deliberately presented as historical information rather than a political campaign.</p>
+  <div class="section-photo">
+    <img src="https://cdn.standardmedia.co.ke/images/monday/byzcz3zyjwzsz9rcluf62419dcfa131b.jpg" alt="Raila Odinga with Jaramogi Oginga Odinga">
+    <div class="photo-caption"><b>Family, history and public life</b><span>An archival photograph documenting Raila's connection to his father, Jaramogi Oginga Odinga.</span></div>
+  </div>
+  <div class="chapter-grid">
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://cdn.standardmedia.co.ke/images/monday/byzcz3zyjwzsz9rcluf62419dcfa131b.jpg" alt="Raila Odinga and Jaramogi Oginga Odinga">
+        <span class="chapter-year">1945</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Born into a historic family</h3>
+        <p>Raila Amolo Odinga was born on 7 January 1945 in Maseno to Jaramogi Oginga Odinga and Mary Juma Odinga. His father would become Kenya's first Vice President after independence.</p>
+        <div class="fact">His childhood was closely connected to a family already deeply involved in Kenya's public life.</div>
+        <div class="source">Source: Kenya National Assembly record, 16 October 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEmOCaYzUrniw/feedshare-shrink_1280/B4DZnnOJQYJMAs-/0/1760520869610?e=2147483647&amp;t=6gk65gSIZIDkd0ADRj93fAYunqyEECWRN805m4ng5LY&amp;v=beta" alt="Raila Odinga portrait">
+        <span class="chapter-year">Childhood</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Education and early formation</h3>
+        <p>He attended Kisumu Union School and Maranda High School before continuing his studies in what was then East Germany. Parliament's 2025 record describes his early education as part of the foundation of his later engineering career.</p>
+        <div class="fact">Education, family and the political environment around him all formed important strands of his early life.</div>
+        <div class="source">Source: Kenya National Assembly biography, 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://www.livenowafrica.com/article_images/1760521139982043.jpg" alt="Raila Odinga portrait">
+        <span class="chapter-year">Jaramogi</span>
+      </div>
+      <div class="chapter-body">
+        <h3>The son of Jaramogi</h3>
+        <p>Jaramogi Oginga Odinga's public career, including his role as Kenya's first Vice President and his years in detention, formed part of the environment in which Raila grew up.</p>
+        <div class="fact">The relationship between father and son is one of the central threads in understanding the Odinga family's place in Kenya's history.</div>
+        <div class="source">Source: Parliament of Kenya and contemporary biographical reporting.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://streamlinefeed.tech/storage/v1/object/public/media/people/17162d3a-5386-4f14-b69c-713f7e4562c8-profile-1750751864532.jpg" alt="Raila Odinga">
+        <span class="chapter-year">1965–1970</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Engineering in Germany</h3>
+        <p>From 1965 to 1970, Odinga studied mechanical engineering at the Technical University in Magdeburg, East Germany, specialising in production technology and earning a master's degree.</p>
+        <div class="fact">The engineer's training later became visible in his interest in industry, standards, infrastructure and development.</div>
+        <div class="source">Source: Kenya Parliament Library biographical profile.</div>
+      </div>
+    </article>
+
+    <article class="chapter chapter-wide">
+      <div class="chapter-photo">
+        <img src="https://www.capitalfm.co.ke/news/files/2024/08/WhatsApp-Image-2024-08-27-at-12.41.14-scaled.jpeg" alt="Raila Odinga during a public event">
+        <span class="chapter-year">1970s</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Return to Kenya — engineer, lecturer and entrepreneur</h3>
+        <p>After returning to Kenya, he joined the University of Nairobi's Department of Mechanical Engineering and taught until 1974. He later served at the Kenya Bureau of Standards, where Parliament records him rising to Deputy Director. He also founded East African Spectre Limited, an enterprise associated with gas-cylinder manufacturing.</p>
+        <div class="fact">This chapter matters because the public figure began not as a career politician, but as an engineer, lecturer, standards professional and entrepreneur.</div>
+        <div class="source">Sources: Kenya National Assembly, Kenya Parliament Library, contemporary historical reporting.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://cdn.standardmedia.co.ke/images/monday/byzcz3zyjwzsz9rcluf62419dcfa131b.jpg" alt="Archival photograph">
+        <span class="chapter-year">1982–1991</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Detention and political repression</h3>
+        <p>Following the attempted coup of August 1982, Odinga was arrested and subsequently detained without trial. Parliament's 2025 record states that he spent years under detention during the period of political repression.</p>
+        <div class="fact">This was one of the defining and most difficult chapters of his life and later became part of his public narrative about democratic reform.</div>
+        <div class="source">Source: Parliament of Kenya, Special Sitting records, 16 October 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEmOCaYzUrniw/feedshare-shrink_1280/B4DZnnOJQYJMAs-/0/1760520869610?e=2147483647&amp;t=6gk65gSIZIDkd0ADRj93fAYunqyEECWRN805m4ng5LY&amp;v=beta" alt="Raila Odinga">
+        <span class="chapter-year">1991–1992</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Return to open politics</h3>
+        <p>After the return of multiparty politics, Odinga joined the Forum for the Restoration of Democracy and entered elective politics. He won the Lang'ata parliamentary seat in 1992.</p>
+        <div class="fact">Parliament records describe the 1990s as the beginning of his sustained role in the country's multiparty political era.</div>
+        <div class="source">Source: Kenya National Assembly, 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://www.livenowafrica.com/article_images/1760521139982043.jpg" alt="Raila Odinga">
+        <span class="chapter-year">1997–2007</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Parliament, parties and national politics</h3>
+        <p>He retained Lang'ata in successive elections and held ministerial responsibilities including Energy, Roads, Public Works and Housing. He was also central to coalition-building in the political transitions of the period.</p>
+        <div class="fact">His parliamentary career combined opposition politics, Cabinet service and participation in constitutional reform processes.</div>
+        <div class="source">Source: African Union biography and Parliament records.</div>
+      </div>
+    </article>
+
+    <article class="chapter chapter-wide">
+      <div class="chapter-photo">
+        <img src="https://www.capitalfm.co.ke/news/files/2024/08/WhatsApp-Image-2024-08-27-at-12.41.14-scaled.jpeg" alt="Raila Odinga speaking">
+        <span class="chapter-year">2008–2013</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Prime Minister of Kenya</h3>
+        <p>Following the 2007–2008 post-election crisis and the National Accord, Odinga served as Prime Minister in the Grand Coalition Government from 2008 to 2013. Parliament's tribute records his role in national reconciliation during a period when the country was recovering from violence and institutional crisis.</p>
+        <div class="fact">The office placed him at the centre of Kenya's executive government during the transition toward the 2010 Constitution and the subsequent devolution era.</div>
+        <div class="source">Sources: Parliament of Kenya; African Union Commission.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://streamlinefeed.tech/storage/v1/object/public/media/people/17162d3a-5386-4f14-b69c-713f7e4562c8-profile-1750751864532.jpg" alt="Raila Odinga">
+        <span class="chapter-year">2018–2025</span>
+      </div>
+      <div class="chapter-body">
+        <h3>African Union — the continental chapter</h3>
+        <p>In October 2018, the African Union appointed Odinga High Representative for Infrastructure Development in Africa. The mandate focused on continental integration, transnational highways, infrastructure ownership and the high-speed rail vision within Agenda 2063.</p>
+        <div class="fact">His work here extended his public career beyond Kenyan politics into a continental development role.</div>
+        <div class="source">Source: African Union Commission, 20 October 2018.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://cdn.standardmedia.co.ke/images/monday/byzcz3zyjwzsz9rcluf62419dcfa131b.jpg" alt="Raila Odinga family archive">
+        <span class="chapter-year">Family</span>
+      </div>
+      <div class="chapter-body">
+        <h3>Raila the husband and father</h3>
+        <p>Raila married Ida Odinga in 1974. They had four children: Fidel, Rosemary, Raila Junior and Winnie. Ida's own public and professional life formed an important part of the family's story, particularly during Raila's years of detention.</p>
+        <div class="fact">Family recollections presented at his state funeral described a private side of Raila alongside the public political figure.</div>
+        <div class="source">Source: family tributes reported by The Standard; Parliament record.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://www.livenowafrica.com/article_images/1760521139982043.jpg" alt="Raila Odinga later-life portrait">
+        <span class="chapter-year">Final years</span>
+      </div>
+      <div class="chapter-body">
+        <h3>The final chapter</h3>
+        <p>In his later years, Odinga remained active in national and continental public affairs. In March 2025 he and President William Ruto signed a framework for cooperation on national challenges, while Odinga also pursued the African Union Commission chairmanship.</p>
+        <div class="fact">His final year therefore included both political dialogue at home and a continued continental role.</div>
+        <div class="source">Source: Office of the President, 8 March 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter">
+      <div class="chapter-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQEmOCaYzUrniw/feedshare-shrink_1280/B4DZnnOJQYJMAs-/0/1760520869610?e=2147483647&amp;t=6gk65gSIZIDkd0ADRj93fAYunqyEECWRN805m4ng5LY&amp;v=beta" alt="Raila Odinga">
+        <span class="chapter-year">15 Oct 2025</span>
+      </div>
+      <div class="chapter-body">
+        <h3>The passing of a former Prime Minister</h3>
+        <p>Raila Amolo Odinga died on Wednesday, 15 October 2025, while receiving medical treatment in India. He was 80 years old. The National Assembly recorded the country's mourning and the Presidential proclamation of a State Funeral.</p>
+        <div class="fact">His death marked the end of an eight-decade life that had intersected with many of independent Kenya's defining political chapters.</div>
+        <div class="source">Source: Kenya National Assembly, 16 October 2025.</div>
+      </div>
+    </article>
+
+    <article class="chapter chapter-wide">
+      <div class="chapter-photo">
+        <img src="https://www.capitalfm.co.ke/news/files/2024/08/WhatsApp-Image-2024-08-27-at-12.41.14-scaled.jpeg" alt="Raila Odinga public ceremony">
+        <span class="chapter-year">15–20 Oct 2025</span>
+      </div>
+      <div class="chapter-body">
+        <h3>National mourning and farewell</h3>
+        <p>The country observed a period of national mourning. A State Funeral was held in Nairobi, followed by the funeral service in Bondo. On 19 October 2025, Raila was buried at Kang'o ka Jaramogi beside his father, Jaramogi Oginga Odinga, with military honours including a 17-gun salute. On 20 October, Mashujaa Day was dedicated to his life and a posthumous C.G.H., First Class was conferred upon him.</p>
+        <div class="fact">The official farewell therefore moved from national mourning to a permanent place in the country's commemorative record.</div>
+        <div class="source">Sources: Office of the President; Kenya National Assembly.</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="service" class="fade show">
+  <div class="sectiontag">Beyond one office</div>
+  <h2>Public service &amp; Africa</h2>
+  <div class="section-photo">
+    <img src="https://www.capitalfm.co.ke/news/files/2024/08/WhatsApp-Image-2024-08-27-at-12.41.14-scaled.jpeg" alt="Raila Odinga speaking at State House during his African Union Commission campaign">
+    <div class="photo-caption"><b>Kenya and the African continent</b><span>Raila speaking at a State House event during his 2024 African Union Commission campaign.</span></div>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="icon">🇰🇪</div><h3>Kenya</h3><p>His decades in national politics intersected with debates about constitutional reform, governance, elections, inclusion and the direction of the Kenyan state.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>Africa</h3><p>As AU High Representative for Infrastructure Development, he worked on continental infrastructure, integration and connectivity initiatives.</p></div>
+    <div class="card"><div class="icon">🤝</div><h3>Dialogue</h3><p>His public career included periods of political rivalry as well as cooperation and dialogue with leaders across Kenya's political spectrum.</p></div>
+    <div class="card"><div class="icon">👨&zwj;👩&zwj;👧&zwj;👦</div><h3>Family</h3><p>Behind the public figure was a family life shared with his wife, Ida Odinga, and their children. The full tribute will treat family history with dignity and care.</p></div>
+    <div class="card"><div class="icon">🏅</div><h3>National honour</h3><p>In October 2025, the President posthumously conferred on him the Chief of the Order of the Golden Heart of Kenya, First Class.</p></div>
+    <div class="card"><div class="icon">🎶</div><h3>The person</h3><p>Anniversary organisers have highlighted his love of people, sports, music, debate and public engagement as parts of the life being remembered.</p></div>
+  </div>
+</section>
+
+
+<section id="gallery" class="fade show">
+  <div class="sectiontag">A life in pictures</div>
+  <h2>80 years. Thousands of memories.</h2>
+  <p class="lead">A tribute should not only tell his story — it should allow visitors to see the different chapters of that life: youth, family, public service, national leadership and his final years.</p>
+
+  <div class="gallery">
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://cdn.standardmedia.co.ke/images/monday/byzcz3zyjwzsz9rcluf62419dcfa131b.jpg" alt="Raila Odinga and Jaramogi Oginga Odinga">
+      <div class="gcaption"><b>Family &amp; heritage</b><small>Archival photograph</small></div>
+    </div>
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://media.licdn.com/dms/image/v2/D4D22AQEmOCaYzUrniw/feedshare-shrink_1280/B4DZnnOJQYJMAs-/0/1760520869610?e=2147483647&amp;t=6gk65gSIZIDkd0ADRj93fAYunqyEECWRN805m4ng5LY&amp;v=beta" alt="Raila Odinga portrait">
+      <div class="gcaption"><b>The statesman</b><small>Formal portrait</small></div>
+    </div>
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://www.livenowafrica.com/article_images/1760521139982043.jpg" alt="Raila Odinga in blue">
+      <div class="gcaption"><b>The human face</b><small>A later-life portrait</small></div>
+    </div>
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://www.capitalfm.co.ke/news/files/2024/08/WhatsApp-Image-2024-08-27-at-12.41.14-scaled.jpeg" alt="Raila Odinga at State House">
+      <div class="gcaption"><b>Africa &amp; diplomacy</b><small>2024 AU Commission campaign</small></div>
+    </div>
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://streamlinefeed.tech/storage/v1/object/public/media/people/17162d3a-5386-4f14-b69c-713f7e4562c8-profile-1750751864532.jpg" alt="Raila Odinga in formal suit">
+      <div class="gcaption"><b>National leadership</b><small>Formal portrait</small></div>
+    </div>
+    <div class="gitem" onclick="openLightbox(this)">
+      <img src="https://i.pinimg.com/1200x/d3/30/d3/d330d363ac5c0dea8287ee07de0eef4b.jpg" alt="Archival Raila Odinga photograph">
+      <div class="gcaption"><b>Through generations</b><small>Historical archive</small></div>
+    </div>
+  </div>
+
+  <p class="source-note">Photo references should be credited to their original publishers/owners. For a public deployment, download and use images for which you have permission or a suitable licence rather than relying on hotlinked files. The official RAO Tribute Portal also maintains a dedicated photo gallery and archival life-in-pictures collection.</p>
+</section>
+
+<section id="memorial" class="fade show">
+  <div class="memorial">
+    <div class="candle">🕯️</div>
+    <div class="sectiontag">One year later</div>
+    <h2>October 2026 remembrance</h2>
+    <p>The first anniversary of Raila Amolo Odinga's passing falls on 15 October 2026. The family has established a National Steering Committee to coordinate commemorative activities, with the programme being family-led, people-centred and national in character.</p>
+    <div id="countdown"><div class="timebox"><b>12</b><small>DAYS</small></div>
+     <div class="timebox"><b>12</b><small>HOURS</small></div>
+     <div class="timebox"><b>52</b><small>MINUTES</small></div>
+     <div class="timebox"><b>45</b><small>SECONDS</small></div></div>
+    <button class="cta" onclick="lightCandle()">🕯️ Light a virtual candle</button>
+    <p id="candleMessage" style="display:none;color:var(--gold2)">Your candle has been lit in remembrance.</p>
+  </div>
+
+  <div class="memory-banner">
+    <h3>The remembrance belongs to history — and to the people.</h3>
+    <p>Current anniversary reporting says the official commemorations are scheduled around October 10–17, 2026, with family-led activities at Kang'o ka Jaramogi and a memorial Mass among the planned events. Because some details remain subject to the steering committee's final calendar, this website will treat the programme as a living section that can be updated rather than presenting tentative details as fixed facts.</p>
+  </div>
+</section>
+
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <span class="closebox" onclick="closeLightbox(event)">×</span>
+  <img id="lightboxImg" src="" alt="Expanded tribute photograph">
+</div>
+
+
+<section id="sources" class="fade show">
+  <div class="sectiontag">Research &amp; archives</div>
+  <h2>Remembering with evidence.</h2>
+  <p class="lead">This tribute separates historical record from interpretation. Major dates and offices are checked against Kenyan parliamentary records, African Union records, the Office of the President and reputable Kenyan reporting.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🏛️</div><h3>Parliament of Kenya</h3><p>Biographical and condolence records documenting his education, engineering career, detention, parliamentary service and national role.</p></div>
+    <div class="card"><div class="icon">🌍</div><h3>African Union</h3><p>Official record of his appointment as High Representative for Infrastructure Development and the AU's statement following his death.</p></div>
+    <div class="card"><div class="icon">🇰🇪</div><h3>Office of the President</h3><p>Official records of his final national farewell, the 2025 Mashujaa Day honour and the government's 2026 anniversary coordination.</p></div>
+  </div>
+</section>
+
+<footer>
+  <strong>RAILA AMOLO ODINGA</strong><br>
+  A digital remembrance • 1945 — 2025<br><br>
+  <small>This independent tribute is intended for historical remembrance and public education. It is not an official family, government or political-party website.</small>
+</footer>
+
+<script>
+/* ============================
+   JAVASCRIPT — START HERE 👇
+   ============================ */
+
+// 1. ANNIVERSARY COUNTDOWN
+function updateCountdown(){
+  const target = new Date("October 15, 2026 00:00:00+03:00").getTime();
+  const now = Date.now();
+  const gap = Math.max(0,target-now);
+  const days = Math.floor(gap/86400000);
+  const hours = Math.floor((gap%86400000)/3600000);
+  const mins = Math.floor((gap%3600000)/60000);
+  const secs = Math.floor((gap%60000)/1000);
+
+  document.getElementById("countdown").innerHTML =
+    `<div class="timebox"><b>${days}</b><small>DAYS</small></div>
+     <div class="timebox"><b>${hours}</b><small>HOURS</small></div>
+     <div class="timebox"><b>${mins}</b><small>MINUTES</small></div>
+     <div class="timebox"><b>${secs}</b><small>SECONDS</small></div>`;
+}
+setInterval(updateCountdown,1000);
+updateCountdown();
+
+// 2. VIRTUAL CANDLE
+function lightCandle(){
+  document.getElementById("candleMessage").style.display="block";
+}
+
+// 3. SCROLL REVEAL
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add("show");
+  });
+},{threshold:.12});
+
+document.querySelectorAll(".fade").forEach(el=>observer.observe(el));
+
+// 4. MOBILE NAVIGATION
+document.querySelector(".menu").addEventListener("click",()=>{
+  const links=document.querySelector(".links");
+  links.style.display = links.style.display==="flex" ? "none" : "flex";
+  links.style.position="absolute";
+  links.style.top="62px";
+  links.style.right="15px";
+  links.style.flexDirection="column";
+  links.style.padding="15px";
+  links.style.background="#0b100e";
+  links.style.border="1px solid rgba(214,181,107,.22)";
+  links.style.borderRadius="12px";
+});
+
+// 5. PHOTO LIGHTBOX
+function openLightbox(card){
+  const img = card.querySelector("img");
+  document.getElementById("lightboxImg").src = img.src;
+  document.getElementById("lightbox").classList.add("open");
+}
+function closeLightbox(event){
+  if(event.target.id==="lightbox" || event.target.classList.contains("closebox")){
+    document.getElementById("lightbox").classList.remove("open");
+  }
+}
+</script>
+
+
+</body></html>
